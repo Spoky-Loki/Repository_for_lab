@@ -23,3 +23,10 @@ int LaterInYear(int day1, int month1, int day2, int month2)
 			return -1;
 	}
 }
+
+int DaysInYear(int year)
+{
+	if (IsLeapYear(year))
+		return 366;
+	return 365;
+}
